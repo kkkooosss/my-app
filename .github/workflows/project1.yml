@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Maven
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: CI/CD ti Tomcat (aws-ec2) with Maven
+name: CI/CD to Tomcat (aws-ec2) with Maven
 
 on:
   push:
@@ -22,4 +22,4 @@ jobs:
     - name: Build with Maven
       run: mvn package --file pom.xml
     - name: deploy to tomcat
-      run: curl -v -u admin:admin -T /home/runner/work/my-app/my-app/target/dependency/webapp-runner.jar 'http://18.197.115.221:8080//manager/text/deploy?path=/my-new-app-2' 
+      run: curl -v -u admin:admin -T /home/runner/work/my-app/my-app/target/dependency/webapp-runner.jar 'http://18.197.115.221:8080//manager/text/deploy?path=/my-new-app-3' 
