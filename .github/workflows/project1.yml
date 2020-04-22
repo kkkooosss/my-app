@@ -22,4 +22,4 @@ jobs:
     - name: Build with Maven
       run: mvn package --file pom.xml
     - name: deploy to tomcat
-      run: curl -v -u admin:admin -T /home/runner/work/my-app/my-app/target/dependency/webapp-runner.jar 'http://18.197.115.221:8080//manager/text/deploy?path=/my-new-app-3' 
+      run: curl -v -u admin:admin -T /home/runner/work/my-app/my-app/target/dependency/webapp-runner.war 'http://18.197.115.221:8080//manager/text/deploy?path=/my-new-app-3' 
